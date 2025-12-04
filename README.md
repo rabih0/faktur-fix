@@ -1,21 +1,69 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Faktur-Fix - مساعد الفواتير والعروض
 
-# Run and deploy your AI Studio app
+تطبيق ويب حديث لإنشاء الفواتير والعروض باستخدام الذكاء الاصطناعي.
 
-This contains everything you need to run your app locally.
+## 🚀 النشر
 
-View your app in AI Studio: https://ai.studio/apps/drive/1AVtDcH6DeaTiOiijADWGmvrWBvmUOwZt
+### خيار 1: GitHub Pages (مجاني)
 
-## Run Locally
+1. ادفع الكود إلى GitHub
+2. اذهب إلى Settings → Pages
+3. في "Build and deployment"، اختر "GitHub Actions"
+4. سيتم النشر تلقائياً على: `https://[username].github.io/FAKTUR-FIX/`
 
-**Prerequisites:**  Node.js
+### خيار 2: Netlify (موصى به)
 
+1. ادفع الكود إلى GitHub
+2. اذهب إلى [Netlify](https://netlify.com)
+3. اضغط "Add new site" → "Import an existing project"
+4. اختر مستودع GitHub الخاص بك
+5. سيتم اكتشاف الإعدادات تلقائياً من `netlify.toml`
+6. اضغط "Deploy"
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# faktur-fix
+### خيار 3: Vercel (سريع)
+
+1. ادفع الكود إلى GitHub
+2. اذهب إلى [Vercel](https://vercel.com)
+3. اضغط "Add New" → "Project"
+4. اختر مستودع GitHub الخاص بك
+5. سيتم اكتشاف الإعدادات تلقائياً من `vercel.json`
+6. اضغط "Deploy"
+
+## 🛠️ التطوير المحلي
+
+```bash
+# تثبيت المكتبات
+npm install
+
+# تشغيل السيرفر المحلي
+npm run dev
+
+# بناء للإنتاج
+npm run build
+
+# معاينة البناء
+npm run preview
+```
+
+## 📝 ملاحظات مهمة
+
+- **لا ترفع مجلد `dist`** إلى GitHub - سيتم بناؤه تلقائياً
+- **API Key**: تأكد من إضافة `GEMINI_API_KEY` في إعدادات البيئة للمنصة المستخدمة
+- التطبيق يستخدم Vite + React + TypeScript
+
+## 🔧 التقنيات المستخدمة
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Google Generative AI
+- jsPDF & html2canvas
+
+## 📱 PWA Support
+
+التطبيق يدعم Progressive Web App ويمكن تثبيته على الأجهزة المحمولة.
+
+---
+
+تم التطوير بواسطة Rabih Al Ahmad
