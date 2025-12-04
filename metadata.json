@@ -1,0 +1,5 @@
+{
+  "name": "Rechnungs-Assistent",
+  "description": "Eine Webanwendung zum Erstellen, Verwalten und Speichern von Rechnungen mit KI-gestützter Aufgabenerstellung für Umzugs- und Reinigungsunternehmen. Ermöglicht die Verwaltung von Kunden- und Firmendaten und den Export von Rechnungen als PDF.",
+  "requestFramePermissions": []
+}
